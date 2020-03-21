@@ -6,7 +6,6 @@ import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.equalTo;
 
 import java.util.List;
-import javax.transaction.Transactional;
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.derby.DerbyDatabaseTestResource;
 import io.quarkus.test.junit.QuarkusTest;
@@ -15,7 +14,7 @@ import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 
 @QuarkusTest
-@QuarkusTestResource(DerbyDatabaseTestResource.class)
+// @QuarkusTestResource(DerbyDatabaseTestResource.class)
 public class FruitsResourceTest {
 
     @Test
